@@ -55,6 +55,10 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
 
         private void preencheDadosGerais()
         {
+
+            this.valorRestante = 0;
+            this.valorPago = 0;
+
             lbl_aluno_ID.Text = this.alunoID.ToString();
 
             for (int row = 0; row < dataGridView2.Rows.Count; row++)
@@ -69,9 +73,9 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
 
             this.valorTotal = this.valorPago + this.valorRestante;
 
-            lbl_valor_curso.Text = this.valorTotal.ToString();
-            lbl_valor_pago.Text = this.valorPago.ToString();
-            lbl_valor_restante.Text = this.valorRestante.ToString();
+            lbl_valor_curso.Text = $"R$ {this.valorTotal}";
+            lbl_valor_pago.Text = $"R$ {this.valorPago}";
+            lbl_valor_restante.Text = $"R$ {this.valorRestante}";
         }
 
         private void btn_salvar_alteracoes_Click(object sender, EventArgs e)

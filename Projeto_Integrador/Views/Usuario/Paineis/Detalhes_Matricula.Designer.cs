@@ -30,6 +30,11 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txb_endereco = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_telefone = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_email = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_idade = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btn_salvar_alteracoes = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -69,11 +74,6 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.lbl_parcela_selecionada = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.txb_endereco = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_telefone = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_email = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_idade = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -104,15 +104,110 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do aluno";
             // 
+            // txb_endereco
+            // 
+            this.txb_endereco.Depth = 0;
+            this.txb_endereco.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_endereco.Hint = "";
+            this.txb_endereco.Location = new System.Drawing.Point(74, 140);
+            this.txb_endereco.MaxLength = 32767;
+            this.txb_endereco.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_endereco.Name = "txb_endereco";
+            this.txb_endereco.PasswordChar = '\0';
+            this.txb_endereco.SelectedText = "";
+            this.txb_endereco.SelectionLength = 0;
+            this.txb_endereco.SelectionStart = 0;
+            this.txb_endereco.Size = new System.Drawing.Size(204, 23);
+            this.txb_endereco.TabIndex = 17;
+            this.txb_endereco.TabStop = false;
+            this.txb_endereco.UseSystemPasswordChar = false;
+            // 
+            // txb_telefone
+            // 
+            this.txb_telefone.Depth = 0;
+            this.txb_telefone.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_telefone.Hint = "";
+            this.txb_telefone.Location = new System.Drawing.Point(74, 111);
+            this.txb_telefone.MaxLength = 32767;
+            this.txb_telefone.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_telefone.Name = "txb_telefone";
+            this.txb_telefone.PasswordChar = '\0';
+            this.txb_telefone.SelectedText = "";
+            this.txb_telefone.SelectionLength = 0;
+            this.txb_telefone.SelectionStart = 0;
+            this.txb_telefone.Size = new System.Drawing.Size(204, 23);
+            this.txb_telefone.TabIndex = 16;
+            this.txb_telefone.TabStop = false;
+            this.txb_telefone.UseSystemPasswordChar = false;
+            // 
+            // txb_email
+            // 
+            this.txb_email.Depth = 0;
+            this.txb_email.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_email.Hint = "";
+            this.txb_email.Location = new System.Drawing.Point(63, 82);
+            this.txb_email.MaxLength = 32767;
+            this.txb_email.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_email.Name = "txb_email";
+            this.txb_email.PasswordChar = '\0';
+            this.txb_email.SelectedText = "";
+            this.txb_email.SelectionLength = 0;
+            this.txb_email.SelectionStart = 0;
+            this.txb_email.Size = new System.Drawing.Size(215, 23);
+            this.txb_email.TabIndex = 15;
+            this.txb_email.TabStop = false;
+            this.txb_email.UseSystemPasswordChar = false;
+            // 
+            // txb_idade
+            // 
+            this.txb_idade.Depth = 0;
+            this.txb_idade.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_idade.Hint = "";
+            this.txb_idade.Location = new System.Drawing.Point(63, 53);
+            this.txb_idade.MaxLength = 32767;
+            this.txb_idade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_idade.Name = "txb_idade";
+            this.txb_idade.PasswordChar = '\0';
+            this.txb_idade.SelectedText = "";
+            this.txb_idade.SelectionLength = 0;
+            this.txb_idade.SelectionStart = 0;
+            this.txb_idade.Size = new System.Drawing.Size(215, 23);
+            this.txb_idade.TabIndex = 14;
+            this.txb_idade.TabStop = false;
+            this.txb_idade.UseSystemPasswordChar = false;
+            // 
+            // txb_nome
+            // 
+            this.txb_nome.Depth = 0;
+            this.txb_nome.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_nome.Hint = "";
+            this.txb_nome.Location = new System.Drawing.Point(63, 24);
+            this.txb_nome.MaxLength = 32767;
+            this.txb_nome.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_nome.Name = "txb_nome";
+            this.txb_nome.PasswordChar = '\0';
+            this.txb_nome.SelectedText = "";
+            this.txb_nome.SelectionLength = 0;
+            this.txb_nome.SelectionStart = 0;
+            this.txb_nome.Size = new System.Drawing.Size(215, 23);
+            this.txb_nome.TabIndex = 13;
+            this.txb_nome.TabStop = false;
+            this.txb_nome.UseSystemPasswordChar = false;
+            // 
             // btn_salvar_alteracoes
             // 
+            this.btn_salvar_alteracoes.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_salvar_alteracoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_salvar_alteracoes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_salvar_alteracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_salvar_alteracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salvar_alteracoes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salvar_alteracoes.Location = new System.Drawing.Point(6, 169);
             this.btn_salvar_alteracoes.Name = "btn_salvar_alteracoes";
             this.btn_salvar_alteracoes.Size = new System.Drawing.Size(283, 49);
             this.btn_salvar_alteracoes.TabIndex = 10;
             this.btn_salvar_alteracoes.Text = "Salvar alterações";
-            this.btn_salvar_alteracoes.UseVisualStyleBackColor = true;
+            this.btn_salvar_alteracoes.UseVisualStyleBackColor = false;
             this.btn_salvar_alteracoes.Click += new System.EventHandler(this.btn_salvar_alteracoes_Click);
             // 
             // label11
@@ -283,24 +378,34 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             // 
             // btn_paga_parcela
             // 
+            this.btn_paga_parcela.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_paga_parcela.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_paga_parcela.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_paga_parcela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_paga_parcela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_paga_parcela.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_paga_parcela.Location = new System.Drawing.Point(6, 397);
             this.btn_paga_parcela.Name = "btn_paga_parcela";
             this.btn_paga_parcela.Size = new System.Drawing.Size(278, 48);
             this.btn_paga_parcela.TabIndex = 5;
             this.btn_paga_parcela.Text = "Efetuar pagamento da parcela selecionada";
-            this.btn_paga_parcela.UseVisualStyleBackColor = true;
+            this.btn_paga_parcela.UseVisualStyleBackColor = false;
             this.btn_paga_parcela.Click += new System.EventHandler(this.btn_paga_parcela_Click);
             // 
             // btn_voltar
             // 
+            this.btn_voltar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_voltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_voltar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_voltar.Location = new System.Drawing.Point(297, 397);
             this.btn_voltar.Name = "btn_voltar";
             this.btn_voltar.Size = new System.Drawing.Size(278, 48);
             this.btn_voltar.TabIndex = 4;
             this.btn_voltar.Text = "Voltar";
-            this.btn_voltar.UseVisualStyleBackColor = true;
+            this.btn_voltar.UseVisualStyleBackColor = false;
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
             // dataGridView2
@@ -409,7 +514,6 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(569, 150);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // ID
             // 
@@ -506,96 +610,6 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Seleção";
             // 
-            // txb_endereco
-            // 
-            this.txb_endereco.Depth = 0;
-            this.txb_endereco.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_endereco.Hint = "";
-            this.txb_endereco.Location = new System.Drawing.Point(74, 140);
-            this.txb_endereco.MaxLength = 32767;
-            this.txb_endereco.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_endereco.Name = "txb_endereco";
-            this.txb_endereco.PasswordChar = '\0';
-            this.txb_endereco.SelectedText = "";
-            this.txb_endereco.SelectionLength = 0;
-            this.txb_endereco.SelectionStart = 0;
-            this.txb_endereco.Size = new System.Drawing.Size(204, 23);
-            this.txb_endereco.TabIndex = 17;
-            this.txb_endereco.TabStop = false;
-            this.txb_endereco.UseSystemPasswordChar = false;
-            // 
-            // txb_telefone
-            // 
-            this.txb_telefone.Depth = 0;
-            this.txb_telefone.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_telefone.Hint = "";
-            this.txb_telefone.Location = new System.Drawing.Point(74, 111);
-            this.txb_telefone.MaxLength = 32767;
-            this.txb_telefone.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_telefone.Name = "txb_telefone";
-            this.txb_telefone.PasswordChar = '\0';
-            this.txb_telefone.SelectedText = "";
-            this.txb_telefone.SelectionLength = 0;
-            this.txb_telefone.SelectionStart = 0;
-            this.txb_telefone.Size = new System.Drawing.Size(204, 23);
-            this.txb_telefone.TabIndex = 16;
-            this.txb_telefone.TabStop = false;
-            this.txb_telefone.UseSystemPasswordChar = false;
-            // 
-            // txb_email
-            // 
-            this.txb_email.Depth = 0;
-            this.txb_email.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_email.Hint = "";
-            this.txb_email.Location = new System.Drawing.Point(63, 82);
-            this.txb_email.MaxLength = 32767;
-            this.txb_email.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_email.Name = "txb_email";
-            this.txb_email.PasswordChar = '\0';
-            this.txb_email.SelectedText = "";
-            this.txb_email.SelectionLength = 0;
-            this.txb_email.SelectionStart = 0;
-            this.txb_email.Size = new System.Drawing.Size(215, 23);
-            this.txb_email.TabIndex = 15;
-            this.txb_email.TabStop = false;
-            this.txb_email.UseSystemPasswordChar = false;
-            // 
-            // txb_idade
-            // 
-            this.txb_idade.Depth = 0;
-            this.txb_idade.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_idade.Hint = "";
-            this.txb_idade.Location = new System.Drawing.Point(63, 53);
-            this.txb_idade.MaxLength = 32767;
-            this.txb_idade.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_idade.Name = "txb_idade";
-            this.txb_idade.PasswordChar = '\0';
-            this.txb_idade.SelectedText = "";
-            this.txb_idade.SelectionLength = 0;
-            this.txb_idade.SelectionStart = 0;
-            this.txb_idade.Size = new System.Drawing.Size(215, 23);
-            this.txb_idade.TabIndex = 14;
-            this.txb_idade.TabStop = false;
-            this.txb_idade.UseSystemPasswordChar = false;
-            // 
-            // txb_nome
-            // 
-            this.txb_nome.Depth = 0;
-            this.txb_nome.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_nome.Hint = "";
-            this.txb_nome.Location = new System.Drawing.Point(63, 24);
-            this.txb_nome.MaxLength = 32767;
-            this.txb_nome.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_nome.Name = "txb_nome";
-            this.txb_nome.PasswordChar = '\0';
-            this.txb_nome.SelectedText = "";
-            this.txb_nome.SelectionLength = 0;
-            this.txb_nome.SelectionStart = 0;
-            this.txb_nome.Size = new System.Drawing.Size(215, 23);
-            this.txb_nome.TabIndex = 13;
-            this.txb_nome.TabStop = false;
-            this.txb_nome.UseSystemPasswordChar = false;
-            // 
             // Detalhes_Matricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -606,6 +620,7 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Detalhes_Matricula";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalhes da matricula";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

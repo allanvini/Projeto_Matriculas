@@ -56,6 +56,9 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
 
         private void preencheDadosGerais()
         {
+            this.valorRestante = 0;
+            this.valorPago = 0;
+
             lbl_aluno_ID.Text = this.alunoID.ToString();
 
             for (int row = 0; row < dataGridView2.Rows.Count; row++)
@@ -70,21 +73,9 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
 
             this.valorTotal = this.valorPago + this.valorRestante;
 
-            lbl_valor_curso.Text = this.valorTotal.ToString();
-            lbl_valor_pago.Text = this.valorPago.ToString();
-            lbl_valor_restante.Text = this.valorRestante.ToString();
-        }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-            {
-                this.parcelaID = Convert.ToInt32(row.Cells[0].Value);
-                this.valorParcela = (float)row.Cells[3].Value;
-            }
-
-            lbl_parcela_selecionada.Text = $"{this.parcelaID}";
-            lbl_valor_parcela_selecionada.Text = $"R$ {this.valorParcela}";
+            lbl_valor_curso.Text = $"R$ {this.valorTotal}";
+            lbl_valor_pago.Text = $"R$ {this.valorPago}";
+            lbl_valor_restante.Text = $"R$ {this.valorRestante}";
         }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -93,6 +84,9 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             {
                 this.parcelaID = Convert.ToInt32(row.Cells[0].Value);
                 this.valorParcela = (float)row.Cells[3].Value;
+
+                lbl_parcela_selecionada.Text = this.parcelaID.ToString();
+                lbl_valor_parcela_selecionada.Text = this.valorParcela.ToString();
             }
         }
 
@@ -106,6 +100,9 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             Controllers.CommonController controller = new Controllers.CommonController();
 
             controller.pagaParcela(this.parcelaID);
+
+            this.parcelaID = 0;
+            this.valorParcela = 0;
 
             this.preencheParcelasPagas();
             this.preencheParcelasPendentes();
