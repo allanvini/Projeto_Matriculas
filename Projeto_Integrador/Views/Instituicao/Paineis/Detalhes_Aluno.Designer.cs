@@ -35,9 +35,6 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_parcela_selecionada = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btn_marcar_pendente = new System.Windows.Forms.Button();
-            this.btn_paga_parcela = new System.Windows.Forms.Button();
-            this.btn_voltar = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.ID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,17 +61,20 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_salvar_alteracoes = new System.Windows.Forms.Button();
+            this.txb_endereco = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_telefone = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_email = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label11 = new System.Windows.Forms.Label();
+            this.txb_idade = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_idade = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_email = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_telefone = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_endereco = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.btn_marcar_pendente = new System.Windows.Forms.Button();
+            this.btn_paga_parcela = new System.Windows.Forms.Button();
+            this.btn_voltar = new System.Windows.Forms.Button();
+            this.btn_salvar_alteracoes = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -155,54 +155,6 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Financeiro";
-            // 
-            // btn_marcar_pendente
-            // 
-            this.btn_marcar_pendente.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_marcar_pendente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_marcar_pendente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_marcar_pendente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_marcar_pendente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_marcar_pendente.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_marcar_pendente.Location = new System.Drawing.Point(198, 397);
-            this.btn_marcar_pendente.Name = "btn_marcar_pendente";
-            this.btn_marcar_pendente.Size = new System.Drawing.Size(186, 48);
-            this.btn_marcar_pendente.TabIndex = 6;
-            this.btn_marcar_pendente.Text = "Marcar como pendente";
-            this.btn_marcar_pendente.UseVisualStyleBackColor = false;
-            this.btn_marcar_pendente.Click += new System.EventHandler(this.btn_marcar_pendente_Click);
-            // 
-            // btn_paga_parcela
-            // 
-            this.btn_paga_parcela.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_paga_parcela.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_paga_parcela.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_paga_parcela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_paga_parcela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_paga_parcela.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_paga_parcela.Location = new System.Drawing.Point(6, 397);
-            this.btn_paga_parcela.Name = "btn_paga_parcela";
-            this.btn_paga_parcela.Size = new System.Drawing.Size(186, 48);
-            this.btn_paga_parcela.TabIndex = 5;
-            this.btn_paga_parcela.Text = "Marcar como pago";
-            this.btn_paga_parcela.UseVisualStyleBackColor = false;
-            this.btn_paga_parcela.Click += new System.EventHandler(this.btn_paga_parcela_Click);
-            // 
-            // btn_voltar
-            // 
-            this.btn_voltar.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_voltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_voltar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_voltar.Location = new System.Drawing.Point(389, 397);
-            this.btn_voltar.Name = "btn_voltar";
-            this.btn_voltar.Size = new System.Drawing.Size(186, 48);
-            this.btn_voltar.TabIndex = 4;
-            this.btn_voltar.Text = "Voltar";
-            this.btn_voltar.UseVisualStyleBackColor = false;
-            this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
             // dataGridView2
             // 
@@ -473,21 +425,59 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do aluno";
             // 
-            // btn_salvar_alteracoes
+            // txb_endereco
             // 
-            this.btn_salvar_alteracoes.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_salvar_alteracoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_salvar_alteracoes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_salvar_alteracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_salvar_alteracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salvar_alteracoes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salvar_alteracoes.Location = new System.Drawing.Point(6, 184);
-            this.btn_salvar_alteracoes.Name = "btn_salvar_alteracoes";
-            this.btn_salvar_alteracoes.Size = new System.Drawing.Size(283, 49);
-            this.btn_salvar_alteracoes.TabIndex = 10;
-            this.btn_salvar_alteracoes.Text = "Salvar alterações";
-            this.btn_salvar_alteracoes.UseVisualStyleBackColor = false;
-            this.btn_salvar_alteracoes.Click += new System.EventHandler(this.btn_salvar_alteracoes_Click);
+            this.txb_endereco.Depth = 0;
+            this.txb_endereco.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_endereco.Hint = "";
+            this.txb_endereco.Location = new System.Drawing.Point(72, 143);
+            this.txb_endereco.MaxLength = 32767;
+            this.txb_endereco.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_endereco.Name = "txb_endereco";
+            this.txb_endereco.PasswordChar = '\0';
+            this.txb_endereco.SelectedText = "";
+            this.txb_endereco.SelectionLength = 0;
+            this.txb_endereco.SelectionStart = 0;
+            this.txb_endereco.Size = new System.Drawing.Size(204, 23);
+            this.txb_endereco.TabIndex = 12;
+            this.txb_endereco.TabStop = false;
+            this.txb_endereco.UseSystemPasswordChar = false;
+            // 
+            // txb_telefone
+            // 
+            this.txb_telefone.Depth = 0;
+            this.txb_telefone.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_telefone.Hint = "";
+            this.txb_telefone.Location = new System.Drawing.Point(72, 114);
+            this.txb_telefone.MaxLength = 32767;
+            this.txb_telefone.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_telefone.Name = "txb_telefone";
+            this.txb_telefone.PasswordChar = '\0';
+            this.txb_telefone.SelectedText = "";
+            this.txb_telefone.SelectionLength = 0;
+            this.txb_telefone.SelectionStart = 0;
+            this.txb_telefone.Size = new System.Drawing.Size(204, 23);
+            this.txb_telefone.TabIndex = 11;
+            this.txb_telefone.TabStop = false;
+            this.txb_telefone.UseSystemPasswordChar = false;
+            // 
+            // txb_email
+            // 
+            this.txb_email.Depth = 0;
+            this.txb_email.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_email.Hint = "";
+            this.txb_email.Location = new System.Drawing.Point(61, 85);
+            this.txb_email.MaxLength = 32767;
+            this.txb_email.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_email.Name = "txb_email";
+            this.txb_email.PasswordChar = '\0';
+            this.txb_email.SelectedText = "";
+            this.txb_email.SelectionLength = 0;
+            this.txb_email.SelectionStart = 0;
+            this.txb_email.Size = new System.Drawing.Size(215, 23);
+            this.txb_email.TabIndex = 10;
+            this.txb_email.TabStop = false;
+            this.txb_email.UseSystemPasswordChar = false;
             // 
             // label11
             // 
@@ -498,6 +488,42 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.label11.Size = new System.Drawing.Size(56, 16);
             this.label11.TabIndex = 8;
             this.label11.Text = "Endereço:";
+            // 
+            // txb_idade
+            // 
+            this.txb_idade.Depth = 0;
+            this.txb_idade.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_idade.Hint = "";
+            this.txb_idade.Location = new System.Drawing.Point(61, 56);
+            this.txb_idade.MaxLength = 32767;
+            this.txb_idade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_idade.Name = "txb_idade";
+            this.txb_idade.PasswordChar = '\0';
+            this.txb_idade.SelectedText = "";
+            this.txb_idade.SelectionLength = 0;
+            this.txb_idade.SelectionStart = 0;
+            this.txb_idade.Size = new System.Drawing.Size(215, 23);
+            this.txb_idade.TabIndex = 9;
+            this.txb_idade.TabStop = false;
+            this.txb_idade.UseSystemPasswordChar = false;
+            // 
+            // txb_nome
+            // 
+            this.txb_nome.Depth = 0;
+            this.txb_nome.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_nome.Hint = "";
+            this.txb_nome.Location = new System.Drawing.Point(61, 27);
+            this.txb_nome.MaxLength = 32767;
+            this.txb_nome.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_nome.Name = "txb_nome";
+            this.txb_nome.PasswordChar = '\0';
+            this.txb_nome.SelectedText = "";
+            this.txb_nome.SelectionLength = 0;
+            this.txb_nome.SelectionStart = 0;
+            this.txb_nome.Size = new System.Drawing.Size(215, 23);
+            this.txb_nome.TabIndex = 8;
+            this.txb_nome.TabStop = false;
+            this.txb_nome.UseSystemPasswordChar = false;
             // 
             // label10
             // 
@@ -539,95 +565,82 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.label7.TabIndex = 0;
             this.label7.Text = "Idade:";
             // 
-            // txb_nome
+            // btn_marcar_pendente
             // 
-            this.txb_nome.Depth = 0;
-            this.txb_nome.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_nome.Hint = "";
-            this.txb_nome.Location = new System.Drawing.Point(61, 27);
-            this.txb_nome.MaxLength = 32767;
-            this.txb_nome.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_nome.Name = "txb_nome";
-            this.txb_nome.PasswordChar = '\0';
-            this.txb_nome.SelectedText = "";
-            this.txb_nome.SelectionLength = 0;
-            this.txb_nome.SelectionStart = 0;
-            this.txb_nome.Size = new System.Drawing.Size(215, 23);
-            this.txb_nome.TabIndex = 8;
-            this.txb_nome.TabStop = false;
-            this.txb_nome.UseSystemPasswordChar = false;
+            this.btn_marcar_pendente.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_marcar_pendente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_marcar_pendente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_marcar_pendente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_marcar_pendente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_marcar_pendente.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_marcar_pendente.Image = global::Projeto_Integrador.Properties.Resources.Devolucao;
+            this.btn_marcar_pendente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_marcar_pendente.Location = new System.Drawing.Point(198, 397);
+            this.btn_marcar_pendente.Name = "btn_marcar_pendente";
+            this.btn_marcar_pendente.Size = new System.Drawing.Size(186, 48);
+            this.btn_marcar_pendente.TabIndex = 6;
+            this.btn_marcar_pendente.Text = "Marcar como pendente";
+            this.btn_marcar_pendente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_marcar_pendente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_marcar_pendente.UseVisualStyleBackColor = false;
+            this.btn_marcar_pendente.Click += new System.EventHandler(this.btn_marcar_pendente_Click);
             // 
-            // txb_idade
+            // btn_paga_parcela
             // 
-            this.txb_idade.Depth = 0;
-            this.txb_idade.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_idade.Hint = "";
-            this.txb_idade.Location = new System.Drawing.Point(61, 56);
-            this.txb_idade.MaxLength = 32767;
-            this.txb_idade.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_idade.Name = "txb_idade";
-            this.txb_idade.PasswordChar = '\0';
-            this.txb_idade.SelectedText = "";
-            this.txb_idade.SelectionLength = 0;
-            this.txb_idade.SelectionStart = 0;
-            this.txb_idade.Size = new System.Drawing.Size(215, 23);
-            this.txb_idade.TabIndex = 9;
-            this.txb_idade.TabStop = false;
-            this.txb_idade.UseSystemPasswordChar = false;
+            this.btn_paga_parcela.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_paga_parcela.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_paga_parcela.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_paga_parcela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_paga_parcela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_paga_parcela.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_paga_parcela.Image = global::Projeto_Integrador.Properties.Resources.Pagamento;
+            this.btn_paga_parcela.Location = new System.Drawing.Point(6, 397);
+            this.btn_paga_parcela.Name = "btn_paga_parcela";
+            this.btn_paga_parcela.Size = new System.Drawing.Size(186, 48);
+            this.btn_paga_parcela.TabIndex = 5;
+            this.btn_paga_parcela.Text = "Marcar como pago";
+            this.btn_paga_parcela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_paga_parcela.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_paga_parcela.UseVisualStyleBackColor = false;
+            this.btn_paga_parcela.Click += new System.EventHandler(this.btn_paga_parcela_Click);
             // 
-            // txb_email
+            // btn_voltar
             // 
-            this.txb_email.Depth = 0;
-            this.txb_email.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_email.Hint = "";
-            this.txb_email.Location = new System.Drawing.Point(61, 85);
-            this.txb_email.MaxLength = 32767;
-            this.txb_email.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_email.Name = "txb_email";
-            this.txb_email.PasswordChar = '\0';
-            this.txb_email.SelectedText = "";
-            this.txb_email.SelectionLength = 0;
-            this.txb_email.SelectionStart = 0;
-            this.txb_email.Size = new System.Drawing.Size(215, 23);
-            this.txb_email.TabIndex = 10;
-            this.txb_email.TabStop = false;
-            this.txb_email.UseSystemPasswordChar = false;
+            this.btn_voltar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_voltar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_voltar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voltar.Image = global::Projeto_Integrador.Properties.Resources.Voltar;
+            this.btn_voltar.Location = new System.Drawing.Point(389, 397);
+            this.btn_voltar.Name = "btn_voltar";
+            this.btn_voltar.Size = new System.Drawing.Size(186, 48);
+            this.btn_voltar.TabIndex = 4;
+            this.btn_voltar.Text = "Voltar";
+            this.btn_voltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_voltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_voltar.UseVisualStyleBackColor = false;
+            this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
-            // txb_telefone
+            // btn_salvar_alteracoes
             // 
-            this.txb_telefone.Depth = 0;
-            this.txb_telefone.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_telefone.Hint = "";
-            this.txb_telefone.Location = new System.Drawing.Point(72, 114);
-            this.txb_telefone.MaxLength = 32767;
-            this.txb_telefone.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_telefone.Name = "txb_telefone";
-            this.txb_telefone.PasswordChar = '\0';
-            this.txb_telefone.SelectedText = "";
-            this.txb_telefone.SelectionLength = 0;
-            this.txb_telefone.SelectionStart = 0;
-            this.txb_telefone.Size = new System.Drawing.Size(204, 23);
-            this.txb_telefone.TabIndex = 11;
-            this.txb_telefone.TabStop = false;
-            this.txb_telefone.UseSystemPasswordChar = false;
-            // 
-            // txb_endereco
-            // 
-            this.txb_endereco.Depth = 0;
-            this.txb_endereco.Font = new System.Drawing.Font("Ubuntu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_endereco.Hint = "";
-            this.txb_endereco.Location = new System.Drawing.Point(72, 143);
-            this.txb_endereco.MaxLength = 32767;
-            this.txb_endereco.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_endereco.Name = "txb_endereco";
-            this.txb_endereco.PasswordChar = '\0';
-            this.txb_endereco.SelectedText = "";
-            this.txb_endereco.SelectionLength = 0;
-            this.txb_endereco.SelectionStart = 0;
-            this.txb_endereco.Size = new System.Drawing.Size(204, 23);
-            this.txb_endereco.TabIndex = 12;
-            this.txb_endereco.TabStop = false;
-            this.txb_endereco.UseSystemPasswordChar = false;
+            this.btn_salvar_alteracoes.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_salvar_alteracoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_salvar_alteracoes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_salvar_alteracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_salvar_alteracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salvar_alteracoes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salvar_alteracoes.Image = global::Projeto_Integrador.Properties.Resources.Salvar;
+            this.btn_salvar_alteracoes.Location = new System.Drawing.Point(6, 184);
+            this.btn_salvar_alteracoes.Name = "btn_salvar_alteracoes";
+            this.btn_salvar_alteracoes.Size = new System.Drawing.Size(283, 49);
+            this.btn_salvar_alteracoes.TabIndex = 10;
+            this.btn_salvar_alteracoes.Text = "Salvar alterações";
+            this.btn_salvar_alteracoes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_salvar_alteracoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_salvar_alteracoes.UseVisualStyleBackColor = false;
+            this.btn_salvar_alteracoes.Click += new System.EventHandler(this.btn_salvar_alteracoes_Click);
             // 
             // Detalhes_Aluno
             // 

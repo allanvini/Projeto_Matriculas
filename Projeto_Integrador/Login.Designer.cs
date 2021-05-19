@@ -31,13 +31,13 @@ namespace Projeto_Integrador
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_usuario_login = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txb_usuario_senha = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txb_usuario_login = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.btn_cadastrar_usuario = new System.Windows.Forms.Button();
             this.btn_instituicao_login = new System.Windows.Forms.Button();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.btn_usuario_login = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,21 +60,6 @@ namespace Projeto_Integrador
             this.label2.Size = new System.Drawing.Size(38, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha";
-            // 
-            // btn_usuario_login
-            // 
-            this.btn_usuario_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_usuario_login.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_usuario_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_usuario_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_usuario_login.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_usuario_login.Location = new System.Drawing.Point(32, 177);
-            this.btn_usuario_login.Name = "btn_usuario_login";
-            this.btn_usuario_login.Size = new System.Drawing.Size(288, 48);
-            this.btn_usuario_login.TabIndex = 5;
-            this.btn_usuario_login.Text = "Logar como usuário";
-            this.btn_usuario_login.UseVisualStyleBackColor = true;
-            this.btn_usuario_login.Click += new System.EventHandler(this.btn_usuario_login_Click);
             // 
             // groupBox1
             // 
@@ -127,6 +112,20 @@ namespace Projeto_Integrador
             this.txb_usuario_login.TabStop = false;
             this.txb_usuario_login.UseSystemPasswordChar = false;
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(28, 258);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(166, 18);
+            this.materialLabel1.TabIndex = 11;
+            this.materialLabel1.Text = "Não possui uma conta?";
+            // 
             // btn_cadastrar_usuario
             // 
             this.btn_cadastrar_usuario.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -149,27 +148,35 @@ namespace Projeto_Integrador
             this.btn_instituicao_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_instituicao_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_instituicao_login.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_instituicao_login.Image = global::Projeto_Integrador.Properties.Resources.Instituicao;
             this.btn_instituicao_login.Location = new System.Drawing.Point(32, 324);
             this.btn_instituicao_login.Name = "btn_instituicao_login";
             this.btn_instituicao_login.Size = new System.Drawing.Size(288, 48);
             this.btn_instituicao_login.TabIndex = 10;
             this.btn_instituicao_login.Text = "Acessar como instituição";
+            this.btn_instituicao_login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_instituicao_login.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_instituicao_login.UseVisualStyleBackColor = true;
             this.btn_instituicao_login.Click += new System.EventHandler(this.btn_instituicao_login_Click);
             // 
-            // materialLabel1
+            // btn_usuario_login
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(28, 258);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(168, 19);
-            this.materialLabel1.TabIndex = 11;
-            this.materialLabel1.Text = "Não possui uma conta?";
+            this.btn_usuario_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_usuario_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_usuario_login.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_usuario_login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_usuario_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_usuario_login.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_usuario_login.Image = global::Projeto_Integrador.Properties.Resources.Usuario;
+            this.btn_usuario_login.Location = new System.Drawing.Point(32, 177);
+            this.btn_usuario_login.Name = "btn_usuario_login";
+            this.btn_usuario_login.Size = new System.Drawing.Size(288, 48);
+            this.btn_usuario_login.TabIndex = 5;
+            this.btn_usuario_login.Text = "Logar como usuário";
+            this.btn_usuario_login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_usuario_login.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_usuario_login.UseVisualStyleBackColor = true;
+            this.btn_usuario_login.Click += new System.EventHandler(this.btn_usuario_login_Click);
             // 
             // Login
             // 

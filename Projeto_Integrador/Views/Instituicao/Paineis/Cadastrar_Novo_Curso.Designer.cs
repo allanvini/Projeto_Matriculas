@@ -31,11 +31,11 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_cadastrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txb_valor = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_cadastrar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,21 +59,6 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.label3.TabIndex = 4;
             this.label3.Text = "Valor integral:";
             // 
-            // btn_cadastrar
-            // 
-            this.btn_cadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_cadastrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_cadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cadastrar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastrar.Location = new System.Drawing.Point(12, 169);
-            this.btn_cadastrar.Name = "btn_cadastrar";
-            this.btn_cadastrar.Size = new System.Drawing.Size(255, 41);
-            this.btn_cadastrar.TabIndex = 7;
-            this.btn_cadastrar.Text = "Cadastrar";
-            this.btn_cadastrar.UseVisualStyleBackColor = true;
-            this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
@@ -89,20 +74,22 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do curso";
             // 
-            // btn_cancelar
+            // txb_valor
             // 
-            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_cancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(12, 216);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(255, 41);
-            this.btn_cancelar.TabIndex = 9;
-            this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            this.txb_valor.Depth = 0;
+            this.txb_valor.Hint = "";
+            this.txb_valor.Location = new System.Drawing.Point(98, 44);
+            this.txb_valor.MaxLength = 32767;
+            this.txb_valor.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_valor.Name = "txb_valor";
+            this.txb_valor.PasswordChar = '\0';
+            this.txb_valor.SelectedText = "";
+            this.txb_valor.SelectionLength = 0;
+            this.txb_valor.SelectionStart = 0;
+            this.txb_valor.Size = new System.Drawing.Size(139, 23);
+            this.txb_valor.TabIndex = 6;
+            this.txb_valor.TabStop = false;
+            this.txb_valor.UseSystemPasswordChar = false;
             // 
             // txb_nome
             // 
@@ -121,22 +108,41 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.txb_nome.TabStop = false;
             this.txb_nome.UseSystemPasswordChar = false;
             // 
-            // txb_valor
+            // btn_cancelar
             // 
-            this.txb_valor.Depth = 0;
-            this.txb_valor.Hint = "";
-            this.txb_valor.Location = new System.Drawing.Point(98, 44);
-            this.txb_valor.MaxLength = 32767;
-            this.txb_valor.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_valor.Name = "txb_valor";
-            this.txb_valor.PasswordChar = '\0';
-            this.txb_valor.SelectedText = "";
-            this.txb_valor.SelectionLength = 0;
-            this.txb_valor.SelectionStart = 0;
-            this.txb_valor.Size = new System.Drawing.Size(139, 23);
-            this.txb_valor.TabIndex = 6;
-            this.txb_valor.TabStop = false;
-            this.txb_valor.UseSystemPasswordChar = false;
+            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.Image = global::Projeto_Integrador.Properties.Resources.Cancelar;
+            this.btn_cancelar.Location = new System.Drawing.Point(12, 216);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(255, 41);
+            this.btn_cancelar.TabIndex = 9;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            // 
+            // btn_cadastrar
+            // 
+            this.btn_cadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cadastrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cadastrar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cadastrar.Image = global::Projeto_Integrador.Properties.Resources.Concluir;
+            this.btn_cadastrar.Location = new System.Drawing.Point(12, 169);
+            this.btn_cadastrar.Name = "btn_cadastrar";
+            this.btn_cadastrar.Size = new System.Drawing.Size(255, 41);
+            this.btn_cadastrar.TabIndex = 7;
+            this.btn_cadastrar.Text = "Cadastrar";
+            this.btn_cadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_cadastrar.UseVisualStyleBackColor = true;
+            this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
             // 
             // Cadastrar_Novo_Curso
             // 

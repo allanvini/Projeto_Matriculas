@@ -34,10 +34,10 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Responsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_detalhes = new System.Windows.Forms.Button();
             this.btn_voltar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_aluno_selecionado = new System.Windows.Forms.Label();
+            this.btn_detalhes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,22 +89,6 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.Curso.Name = "Curso";
             this.Curso.ReadOnly = true;
             // 
-            // btn_detalhes
-            // 
-            this.btn_detalhes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_detalhes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_detalhes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_detalhes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_detalhes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_detalhes.Location = new System.Drawing.Point(12, 438);
-            this.btn_detalhes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_detalhes.Name = "btn_detalhes";
-            this.btn_detalhes.Size = new System.Drawing.Size(183, 47);
-            this.btn_detalhes.TabIndex = 1;
-            this.btn_detalhes.Text = "Ver detalhes do aluno";
-            this.btn_detalhes.UseVisualStyleBackColor = true;
-            this.btn_detalhes.Click += new System.EventHandler(this.btn_detalhes_Click);
-            // 
             // btn_voltar
             // 
             this.btn_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -112,12 +96,15 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.btn_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_voltar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voltar.Image = global::Projeto_Integrador.Properties.Resources.Voltar;
             this.btn_voltar.Location = new System.Drawing.Point(197, 438);
             this.btn_voltar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_voltar.Name = "btn_voltar";
-            this.btn_voltar.Size = new System.Drawing.Size(183, 47);
+            this.btn_voltar.Size = new System.Drawing.Size(183, 59);
             this.btn_voltar.TabIndex = 2;
             this.btn_voltar.Text = "Voltar";
+            this.btn_voltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_voltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_voltar.UseVisualStyleBackColor = true;
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
@@ -142,6 +129,26 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.lbl_aluno_selecionado.Size = new System.Drawing.Size(24, 20);
             this.lbl_aluno_selecionado.TabIndex = 4;
             this.lbl_aluno_selecionado.Text = "ID";
+            // 
+            // btn_detalhes
+            // 
+            this.btn_detalhes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_detalhes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_detalhes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_detalhes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_detalhes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_detalhes.Image = global::Projeto_Integrador.Properties.Resources.Detalhes;
+            this.btn_detalhes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_detalhes.Location = new System.Drawing.Point(12, 438);
+            this.btn_detalhes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_detalhes.Name = "btn_detalhes";
+            this.btn_detalhes.Size = new System.Drawing.Size(179, 59);
+            this.btn_detalhes.TabIndex = 1;
+            this.btn_detalhes.Text = "Ver detalhes do aluno";
+            this.btn_detalhes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_detalhes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_detalhes.UseVisualStyleBackColor = true;
+            this.btn_detalhes.Click += new System.EventHandler(this.btn_detalhes_Click);
             // 
             // Listar_Alunos_Matriculados
             // 

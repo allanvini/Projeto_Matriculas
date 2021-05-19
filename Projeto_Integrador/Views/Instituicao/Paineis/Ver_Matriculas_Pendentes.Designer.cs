@@ -51,9 +51,9 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.btn_seta_credito = new MaterialSkin.Controls.MaterialRadioButton();
             this.btn_seta_debito = new MaterialSkin.Controls.MaterialRadioButton();
             this.btn_seta_boleto = new MaterialSkin.Controls.MaterialRadioButton();
-            this.btn_fazer_financiamento = new System.Windows.Forms.Button();
-            this.btn_atualizar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_atualizar = new System.Windows.Forms.Button();
+            this.btn_fazer_financiamento = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -279,7 +279,7 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             // 
             this.btn_seta_credito.AutoSize = true;
             this.btn_seta_credito.Depth = 0;
-            this.btn_seta_credito.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_seta_credito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_seta_credito.Location = new System.Drawing.Point(16, 123);
             this.btn_seta_credito.Margin = new System.Windows.Forms.Padding(0);
             this.btn_seta_credito.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -297,7 +297,7 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             // 
             this.btn_seta_debito.AutoSize = true;
             this.btn_seta_debito.Depth = 0;
-            this.btn_seta_debito.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_seta_debito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_seta_debito.Location = new System.Drawing.Point(16, 93);
             this.btn_seta_debito.Margin = new System.Windows.Forms.Padding(0);
             this.btn_seta_debito.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -315,7 +315,7 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             // 
             this.btn_seta_boleto.AutoSize = true;
             this.btn_seta_boleto.Depth = 0;
-            this.btn_seta_boleto.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_seta_boleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_seta_boleto.Location = new System.Drawing.Point(16, 65);
             this.btn_seta_boleto.Margin = new System.Windows.Forms.Padding(0);
             this.btn_seta_boleto.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -329,21 +329,24 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.btn_seta_boleto.UseVisualStyleBackColor = true;
             this.btn_seta_boleto.CheckedChanged += new System.EventHandler(this.btn_seta_boleto_CheckedChanged_1);
             // 
-            // btn_fazer_financiamento
+            // btn_cancelar
             // 
-            this.btn_fazer_financiamento.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_fazer_financiamento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_fazer_financiamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_fazer_financiamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fazer_financiamento.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_fazer_financiamento.Location = new System.Drawing.Point(409, 271);
-            this.btn_fazer_financiamento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_fazer_financiamento.Name = "btn_fazer_financiamento";
-            this.btn_fazer_financiamento.Size = new System.Drawing.Size(273, 63);
-            this.btn_fazer_financiamento.TabIndex = 6;
-            this.btn_fazer_financiamento.Text = "Fazer financiamento";
-            this.btn_fazer_financiamento.UseVisualStyleBackColor = true;
-            this.btn_fazer_financiamento.Click += new System.EventHandler(this.btn_fazer_financiamento_Click);
+            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.Image = global::Projeto_Integrador.Properties.Resources.Cancelar;
+            this.btn_cancelar.Location = new System.Drawing.Point(409, 412);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(273, 63);
+            this.btn_cancelar.TabIndex = 8;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_atualizar
             // 
@@ -352,30 +355,36 @@ namespace Projeto_Integrador.Views.Instituicao.Paineis
             this.btn_atualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_atualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_atualizar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_atualizar.Image = global::Projeto_Integrador.Properties.Resources.Atualizar;
             this.btn_atualizar.Location = new System.Drawing.Point(409, 341);
             this.btn_atualizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(273, 63);
             this.btn_atualizar.TabIndex = 7;
             this.btn_atualizar.Text = "Atualizar lista";
+            this.btn_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_atualizar.UseVisualStyleBackColor = true;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
-            // btn_cancelar
+            // btn_fazer_financiamento
             // 
-            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_cancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cancelar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(409, 412);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(273, 63);
-            this.btn_cancelar.TabIndex = 8;
-            this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            this.btn_fazer_financiamento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_fazer_financiamento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_fazer_financiamento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_fazer_financiamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fazer_financiamento.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_fazer_financiamento.Image = global::Projeto_Integrador.Properties.Resources.Financiar;
+            this.btn_fazer_financiamento.Location = new System.Drawing.Point(409, 271);
+            this.btn_fazer_financiamento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_fazer_financiamento.Name = "btn_fazer_financiamento";
+            this.btn_fazer_financiamento.Size = new System.Drawing.Size(273, 63);
+            this.btn_fazer_financiamento.TabIndex = 6;
+            this.btn_fazer_financiamento.Text = "Fazer financiamento";
+            this.btn_fazer_financiamento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_fazer_financiamento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_fazer_financiamento.UseVisualStyleBackColor = true;
+            this.btn_fazer_financiamento.Click += new System.EventHandler(this.btn_fazer_financiamento_Click);
             // 
             // Ver_Matriculas_Pendentes
             // 

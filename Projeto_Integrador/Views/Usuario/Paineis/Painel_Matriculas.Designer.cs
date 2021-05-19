@@ -35,11 +35,11 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.Instituicao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Responsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_ver_detalhes = new System.Windows.Forms.Button();
-            this.btn_atualizar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_aluno_selecionado = new System.Windows.Forms.Label();
             this.btn_remover_matricula = new System.Windows.Forms.Button();
+            this.btn_atualizar = new System.Windows.Forms.Button();
+            this.btn_ver_detalhes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,38 +100,6 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.Curso.Name = "Curso";
             this.Curso.ReadOnly = true;
             // 
-            // btn_ver_detalhes
-            // 
-            this.btn_ver_detalhes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ver_detalhes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_ver_detalhes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_ver_detalhes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ver_detalhes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ver_detalhes.Location = new System.Drawing.Point(528, 133);
-            this.btn_ver_detalhes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_ver_detalhes.Name = "btn_ver_detalhes";
-            this.btn_ver_detalhes.Size = new System.Drawing.Size(196, 52);
-            this.btn_ver_detalhes.TabIndex = 6;
-            this.btn_ver_detalhes.Text = "Ver detalhes da matrícula";
-            this.btn_ver_detalhes.UseVisualStyleBackColor = true;
-            this.btn_ver_detalhes.Click += new System.EventHandler(this.btn_ver_detalhes_Click);
-            // 
-            // btn_atualizar
-            // 
-            this.btn_atualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_atualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_atualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_atualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_atualizar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_atualizar.Location = new System.Drawing.Point(528, 193);
-            this.btn_atualizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_atualizar.Name = "btn_atualizar";
-            this.btn_atualizar.Size = new System.Drawing.Size(196, 52);
-            this.btn_atualizar.TabIndex = 7;
-            this.btn_atualizar.Text = "Atualizar";
-            this.btn_atualizar.UseVisualStyleBackColor = true;
-            this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -161,14 +129,56 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.btn_remover_matricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_remover_matricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_remover_matricula.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_remover_matricula.Image = global::Projeto_Integrador.Properties.Resources.Delete;
             this.btn_remover_matricula.Location = new System.Drawing.Point(528, 253);
             this.btn_remover_matricula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_remover_matricula.Name = "btn_remover_matricula";
             this.btn_remover_matricula.Size = new System.Drawing.Size(196, 52);
             this.btn_remover_matricula.TabIndex = 8;
             this.btn_remover_matricula.Text = "Remover matrícula";
+            this.btn_remover_matricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_remover_matricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_remover_matricula.UseVisualStyleBackColor = true;
             this.btn_remover_matricula.Click += new System.EventHandler(this.btn_remover_matricula_Click);
+            // 
+            // btn_atualizar
+            // 
+            this.btn_atualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_atualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_atualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_atualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_atualizar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_atualizar.Image = global::Projeto_Integrador.Properties.Resources.Atualizar;
+            this.btn_atualizar.Location = new System.Drawing.Point(528, 193);
+            this.btn_atualizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_atualizar.Name = "btn_atualizar";
+            this.btn_atualizar.Size = new System.Drawing.Size(196, 52);
+            this.btn_atualizar.TabIndex = 7;
+            this.btn_atualizar.Text = "Atualizar";
+            this.btn_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
+            // 
+            // btn_ver_detalhes
+            // 
+            this.btn_ver_detalhes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ver_detalhes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_ver_detalhes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_ver_detalhes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ver_detalhes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ver_detalhes.Image = global::Projeto_Integrador.Properties.Resources.Detalhes;
+            this.btn_ver_detalhes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ver_detalhes.Location = new System.Drawing.Point(528, 133);
+            this.btn_ver_detalhes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_ver_detalhes.Name = "btn_ver_detalhes";
+            this.btn_ver_detalhes.Size = new System.Drawing.Size(196, 52);
+            this.btn_ver_detalhes.TabIndex = 6;
+            this.btn_ver_detalhes.Text = "Ver detalhes da matrícula";
+            this.btn_ver_detalhes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ver_detalhes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_ver_detalhes.UseVisualStyleBackColor = true;
+            this.btn_ver_detalhes.Click += new System.EventHandler(this.btn_ver_detalhes_Click);
             // 
             // Painel_Matriculas
             // 

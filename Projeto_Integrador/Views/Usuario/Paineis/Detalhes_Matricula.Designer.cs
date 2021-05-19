@@ -202,11 +202,14 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.btn_salvar_alteracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_salvar_alteracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salvar_alteracoes.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salvar_alteracoes.Image = global::Projeto_Integrador.Properties.Resources.Salvar;
             this.btn_salvar_alteracoes.Location = new System.Drawing.Point(6, 169);
             this.btn_salvar_alteracoes.Name = "btn_salvar_alteracoes";
             this.btn_salvar_alteracoes.Size = new System.Drawing.Size(283, 49);
             this.btn_salvar_alteracoes.TabIndex = 10;
             this.btn_salvar_alteracoes.Text = "Salvar alterações";
+            this.btn_salvar_alteracoes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_salvar_alteracoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_salvar_alteracoes.UseVisualStyleBackColor = false;
             this.btn_salvar_alteracoes.Click += new System.EventHandler(this.btn_salvar_alteracoes_Click);
             // 
@@ -384,11 +387,15 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.btn_paga_parcela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_paga_parcela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_paga_parcela.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_paga_parcela.Image = global::Projeto_Integrador.Properties.Resources.Pagamento;
+            this.btn_paga_parcela.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_paga_parcela.Location = new System.Drawing.Point(6, 397);
             this.btn_paga_parcela.Name = "btn_paga_parcela";
             this.btn_paga_parcela.Size = new System.Drawing.Size(278, 48);
             this.btn_paga_parcela.TabIndex = 5;
             this.btn_paga_parcela.Text = "Efetuar pagamento da parcela selecionada";
+            this.btn_paga_parcela.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_paga_parcela.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_paga_parcela.UseVisualStyleBackColor = false;
             this.btn_paga_parcela.Click += new System.EventHandler(this.btn_paga_parcela_Click);
             // 
@@ -400,11 +407,14 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.btn_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_voltar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voltar.Image = global::Projeto_Integrador.Properties.Resources.Voltar;
             this.btn_voltar.Location = new System.Drawing.Point(297, 397);
             this.btn_voltar.Name = "btn_voltar";
             this.btn_voltar.Size = new System.Drawing.Size(278, 48);
             this.btn_voltar.TabIndex = 4;
             this.btn_voltar.Text = "Voltar";
+            this.btn_voltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_voltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_voltar.UseVisualStyleBackColor = false;
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 

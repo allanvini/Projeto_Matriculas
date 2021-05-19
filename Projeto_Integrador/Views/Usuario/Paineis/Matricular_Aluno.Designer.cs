@@ -35,6 +35,11 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txb_endereco = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_telefone = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_email = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_idade = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.dtgv_curso = new System.Windows.Forms.DataGridView();
             this.ID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,11 +58,6 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.label8 = new System.Windows.Forms.Label();
             this.lbl_instituicao = new System.Windows.Forms.Label();
             this.lbl_curso_valor = new System.Windows.Forms.Label();
-            this.txb_nome = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_idade = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_email = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_telefone = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txb_endereco = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_curso)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -135,6 +135,91 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do aluno";
+            // 
+            // txb_endereco
+            // 
+            this.txb_endereco.Depth = 0;
+            this.txb_endereco.Hint = "";
+            this.txb_endereco.Location = new System.Drawing.Point(81, 136);
+            this.txb_endereco.MaxLength = 32767;
+            this.txb_endereco.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_endereco.Name = "txb_endereco";
+            this.txb_endereco.PasswordChar = '\0';
+            this.txb_endereco.SelectedText = "";
+            this.txb_endereco.SelectionLength = 0;
+            this.txb_endereco.SelectionStart = 0;
+            this.txb_endereco.Size = new System.Drawing.Size(176, 23);
+            this.txb_endereco.TabIndex = 24;
+            this.txb_endereco.TabStop = false;
+            this.txb_endereco.UseSystemPasswordChar = false;
+            // 
+            // txb_telefone
+            // 
+            this.txb_telefone.Depth = 0;
+            this.txb_telefone.Hint = "";
+            this.txb_telefone.Location = new System.Drawing.Point(81, 107);
+            this.txb_telefone.MaxLength = 32767;
+            this.txb_telefone.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_telefone.Name = "txb_telefone";
+            this.txb_telefone.PasswordChar = '\0';
+            this.txb_telefone.SelectedText = "";
+            this.txb_telefone.SelectionLength = 0;
+            this.txb_telefone.SelectionStart = 0;
+            this.txb_telefone.Size = new System.Drawing.Size(176, 23);
+            this.txb_telefone.TabIndex = 23;
+            this.txb_telefone.TabStop = false;
+            this.txb_telefone.UseSystemPasswordChar = false;
+            // 
+            // txb_email
+            // 
+            this.txb_email.Depth = 0;
+            this.txb_email.Hint = "";
+            this.txb_email.Location = new System.Drawing.Point(81, 78);
+            this.txb_email.MaxLength = 32767;
+            this.txb_email.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_email.Name = "txb_email";
+            this.txb_email.PasswordChar = '\0';
+            this.txb_email.SelectedText = "";
+            this.txb_email.SelectionLength = 0;
+            this.txb_email.SelectionStart = 0;
+            this.txb_email.Size = new System.Drawing.Size(176, 23);
+            this.txb_email.TabIndex = 22;
+            this.txb_email.TabStop = false;
+            this.txb_email.UseSystemPasswordChar = false;
+            // 
+            // txb_idade
+            // 
+            this.txb_idade.Depth = 0;
+            this.txb_idade.Hint = "";
+            this.txb_idade.Location = new System.Drawing.Point(81, 48);
+            this.txb_idade.MaxLength = 32767;
+            this.txb_idade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_idade.Name = "txb_idade";
+            this.txb_idade.PasswordChar = '\0';
+            this.txb_idade.SelectedText = "";
+            this.txb_idade.SelectionLength = 0;
+            this.txb_idade.SelectionStart = 0;
+            this.txb_idade.Size = new System.Drawing.Size(176, 23);
+            this.txb_idade.TabIndex = 21;
+            this.txb_idade.TabStop = false;
+            this.txb_idade.UseSystemPasswordChar = false;
+            // 
+            // txb_nome
+            // 
+            this.txb_nome.Depth = 0;
+            this.txb_nome.Hint = "";
+            this.txb_nome.Location = new System.Drawing.Point(81, 19);
+            this.txb_nome.MaxLength = 32767;
+            this.txb_nome.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txb_nome.Name = "txb_nome";
+            this.txb_nome.PasswordChar = '\0';
+            this.txb_nome.SelectedText = "";
+            this.txb_nome.SelectionLength = 0;
+            this.txb_nome.SelectionStart = 0;
+            this.txb_nome.Size = new System.Drawing.Size(176, 23);
+            this.txb_nome.TabIndex = 10;
+            this.txb_nome.TabStop = false;
+            this.txb_nome.UseSystemPasswordChar = false;
             // 
             // dtgv_curso
             // 
@@ -260,11 +345,14 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.btn_finaliza_matricula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_finaliza_matricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_finaliza_matricula.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_finaliza_matricula.Image = global::Projeto_Integrador.Properties.Resources.Concluir;
             this.btn_finaliza_matricula.Location = new System.Drawing.Point(504, 350);
             this.btn_finaliza_matricula.Name = "btn_finaliza_matricula";
             this.btn_finaliza_matricula.Size = new System.Drawing.Size(330, 44);
             this.btn_finaliza_matricula.TabIndex = 15;
             this.btn_finaliza_matricula.Text = "Finalizar matrícula";
+            this.btn_finaliza_matricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_finaliza_matricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_finaliza_matricula.UseVisualStyleBackColor = true;
             this.btn_finaliza_matricula.Click += new System.EventHandler(this.btn_finaliza_matricula_Click);
             // 
@@ -275,11 +363,14 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.btn_cancela.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_cancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancela.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancela.Image = global::Projeto_Integrador.Properties.Resources.Cancelar;
             this.btn_cancela.Location = new System.Drawing.Point(504, 400);
             this.btn_cancela.Name = "btn_cancela";
             this.btn_cancela.Size = new System.Drawing.Size(330, 44);
             this.btn_cancela.TabIndex = 16;
             this.btn_cancela.Text = "Cancelar";
+            this.btn_cancela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cancela.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_cancela.UseVisualStyleBackColor = true;
             this.btn_cancela.Click += new System.EventHandler(this.btn_cancela_Click);
             // 
@@ -326,91 +417,6 @@ namespace Projeto_Integrador.Views.Usuario.Paineis
             this.lbl_curso_valor.Size = new System.Drawing.Size(84, 16);
             this.lbl_curso_valor.TabIndex = 20;
             this.lbl_curso_valor.Text = "Curso: / valor: ";
-            // 
-            // txb_nome
-            // 
-            this.txb_nome.Depth = 0;
-            this.txb_nome.Hint = "";
-            this.txb_nome.Location = new System.Drawing.Point(81, 19);
-            this.txb_nome.MaxLength = 32767;
-            this.txb_nome.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_nome.Name = "txb_nome";
-            this.txb_nome.PasswordChar = '\0';
-            this.txb_nome.SelectedText = "";
-            this.txb_nome.SelectionLength = 0;
-            this.txb_nome.SelectionStart = 0;
-            this.txb_nome.Size = new System.Drawing.Size(176, 23);
-            this.txb_nome.TabIndex = 10;
-            this.txb_nome.TabStop = false;
-            this.txb_nome.UseSystemPasswordChar = false;
-            // 
-            // txb_idade
-            // 
-            this.txb_idade.Depth = 0;
-            this.txb_idade.Hint = "";
-            this.txb_idade.Location = new System.Drawing.Point(81, 48);
-            this.txb_idade.MaxLength = 32767;
-            this.txb_idade.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_idade.Name = "txb_idade";
-            this.txb_idade.PasswordChar = '\0';
-            this.txb_idade.SelectedText = "";
-            this.txb_idade.SelectionLength = 0;
-            this.txb_idade.SelectionStart = 0;
-            this.txb_idade.Size = new System.Drawing.Size(176, 23);
-            this.txb_idade.TabIndex = 21;
-            this.txb_idade.TabStop = false;
-            this.txb_idade.UseSystemPasswordChar = false;
-            // 
-            // txb_email
-            // 
-            this.txb_email.Depth = 0;
-            this.txb_email.Hint = "";
-            this.txb_email.Location = new System.Drawing.Point(81, 78);
-            this.txb_email.MaxLength = 32767;
-            this.txb_email.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_email.Name = "txb_email";
-            this.txb_email.PasswordChar = '\0';
-            this.txb_email.SelectedText = "";
-            this.txb_email.SelectionLength = 0;
-            this.txb_email.SelectionStart = 0;
-            this.txb_email.Size = new System.Drawing.Size(176, 23);
-            this.txb_email.TabIndex = 22;
-            this.txb_email.TabStop = false;
-            this.txb_email.UseSystemPasswordChar = false;
-            // 
-            // txb_telefone
-            // 
-            this.txb_telefone.Depth = 0;
-            this.txb_telefone.Hint = "";
-            this.txb_telefone.Location = new System.Drawing.Point(81, 107);
-            this.txb_telefone.MaxLength = 32767;
-            this.txb_telefone.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_telefone.Name = "txb_telefone";
-            this.txb_telefone.PasswordChar = '\0';
-            this.txb_telefone.SelectedText = "";
-            this.txb_telefone.SelectionLength = 0;
-            this.txb_telefone.SelectionStart = 0;
-            this.txb_telefone.Size = new System.Drawing.Size(176, 23);
-            this.txb_telefone.TabIndex = 23;
-            this.txb_telefone.TabStop = false;
-            this.txb_telefone.UseSystemPasswordChar = false;
-            // 
-            // txb_endereco
-            // 
-            this.txb_endereco.Depth = 0;
-            this.txb_endereco.Hint = "";
-            this.txb_endereco.Location = new System.Drawing.Point(81, 136);
-            this.txb_endereco.MaxLength = 32767;
-            this.txb_endereco.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txb_endereco.Name = "txb_endereco";
-            this.txb_endereco.PasswordChar = '\0';
-            this.txb_endereco.SelectedText = "";
-            this.txb_endereco.SelectionLength = 0;
-            this.txb_endereco.SelectionStart = 0;
-            this.txb_endereco.Size = new System.Drawing.Size(176, 23);
-            this.txb_endereco.TabIndex = 24;
-            this.txb_endereco.TabStop = false;
-            this.txb_endereco.UseSystemPasswordChar = false;
             // 
             // Matricular_Aluno
             // 

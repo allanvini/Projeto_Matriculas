@@ -46,8 +46,8 @@ namespace Projeto_Integrador.Views
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_finaliza_cadastro = new System.Windows.Forms.Button();
             this.btn_voltar = new System.Windows.Forms.Button();
+            this.btn_finaliza_cadastro = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -294,21 +294,6 @@ namespace Projeto_Integrador.Views
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha";
             // 
-            // btn_finaliza_cadastro
-            // 
-            this.btn_finaliza_cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_finaliza_cadastro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_finaliza_cadastro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btn_finaliza_cadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_finaliza_cadastro.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_finaliza_cadastro.Location = new System.Drawing.Point(12, 349);
-            this.btn_finaliza_cadastro.Name = "btn_finaliza_cadastro";
-            this.btn_finaliza_cadastro.Size = new System.Drawing.Size(306, 54);
-            this.btn_finaliza_cadastro.TabIndex = 8;
-            this.btn_finaliza_cadastro.Text = "Finalizar cadastro!";
-            this.btn_finaliza_cadastro.UseVisualStyleBackColor = true;
-            this.btn_finaliza_cadastro.Click += new System.EventHandler(this.btn_finaliza_cadastro_Click);
-            // 
             // btn_voltar
             // 
             this.btn_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -316,13 +301,34 @@ namespace Projeto_Integrador.Views
             this.btn_voltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btn_voltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_voltar.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_voltar.Image = global::Projeto_Integrador.Properties.Resources.Voltar;
             this.btn_voltar.Location = new System.Drawing.Point(12, 409);
             this.btn_voltar.Name = "btn_voltar";
             this.btn_voltar.Size = new System.Drawing.Size(306, 54);
             this.btn_voltar.TabIndex = 9;
             this.btn_voltar.Text = "Voltar";
+            this.btn_voltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_voltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_voltar.UseVisualStyleBackColor = true;
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
+            // 
+            // btn_finaliza_cadastro
+            // 
+            this.btn_finaliza_cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_finaliza_cadastro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_finaliza_cadastro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_finaliza_cadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_finaliza_cadastro.Font = new System.Drawing.Font("Ubuntu", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_finaliza_cadastro.Image = global::Projeto_Integrador.Properties.Resources.Concluir;
+            this.btn_finaliza_cadastro.Location = new System.Drawing.Point(12, 349);
+            this.btn_finaliza_cadastro.Name = "btn_finaliza_cadastro";
+            this.btn_finaliza_cadastro.Size = new System.Drawing.Size(306, 54);
+            this.btn_finaliza_cadastro.TabIndex = 8;
+            this.btn_finaliza_cadastro.Text = "Finalizar cadastro!";
+            this.btn_finaliza_cadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_finaliza_cadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_finaliza_cadastro.UseVisualStyleBackColor = true;
+            this.btn_finaliza_cadastro.Click += new System.EventHandler(this.btn_finaliza_cadastro_Click);
             // 
             // Cadastro_Usuario
             // 
